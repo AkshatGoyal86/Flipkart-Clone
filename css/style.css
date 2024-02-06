@@ -1,0 +1,64 @@
+.brand-logo {
+    color: blue;
+    font-family: Riona Sans W01 Bold Italic;
+    font-size: 30px;
+}
+.navbar-option {
+    color: black;
+}
+.search-bar input{
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url('../Images/search.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 10px;
+}
+.iteams-bar {
+    margin-left: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.about a, p{
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
